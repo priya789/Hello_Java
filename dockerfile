@@ -1,5 +1,6 @@
     FROM java:8
     
+    RUN echo "Acquire::Check-Valid-Until \"false\";" > /etc/apt/apt.conf.d/100disablechecks
     RUN apt-get update 
     RUN apt-get install -y maven
 
