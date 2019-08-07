@@ -1,6 +1,8 @@
     FROM java:8
     
-    RUN apt-get update && apt-get install -y apt-transport-https
+    echo 'Acquire::Check-Valid-Until no;' > /etc/apt/apt.conf.d/99no-check-valid-until
+    
+    RUN apt-get update 
     RUN apt-get install -y maven
 
     WORKDIR /code
