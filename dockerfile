@@ -10,4 +10,4 @@
 
     ADD src /code/src
     RUN ["mvn", "package"]
-    CMD ["usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-war", "target/techpoint.war"]
+    CMD ["usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-war", "target/demo.war"]
