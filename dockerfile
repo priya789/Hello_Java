@@ -1,7 +1,5 @@
     FROM java:8
     
-    echo 'Acquire::Check-Valid-Until no;' > /etc/apt/apt.conf.d/99no-check-valid-until
-    
     RUN apt-get update 
     RUN apt-get install -y maven
 
