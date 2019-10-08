@@ -6,12 +6,12 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>Demo Maven Webapp</name>
-  <url>https://github.com/VinutnaNandyala/Hello_Java</url>
+  <url>https://github.com/priya789/Hello_Java</url>
 
   <properties>
-<database.url>jdbc:mysql://IP:3306/test2</database.url>
-<database.user>root</database.user>
-<database.password>password</database.password>
+<database.url>jdbc:mysql://devopsflywaypoc.cvwa0v1dnfoc.us-west-2.rds.amazonaws.com:3306/test</database.url>
+<database.user>admin</database.user>
+<database.password>admin123</database.password>
 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 
@@ -21,7 +21,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -30,7 +30,7 @@
 	
        <groupId>org.flywaydb</groupId>
 	<artifactId>flyway-maven-plugin</artifactId>
-	<version>4.1.2</version>
+	<version>6.0.3</version>
 	<configuration>
 	<sqlMigrationSeparator>_</sqlMigrationSeparator>
 	<locations>
@@ -45,7 +45,7 @@
 	<dependency>
 	<groupId>mysql</groupId>
 	<artifactId>mysql-connector-java</artifactId>
-	<version>5.1.38</version>
+	<version>8.0.17</version>
 	</dependency>
 	<!-- /Mysql -->
 	</dependencies>
@@ -53,7 +53,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.2.2</version>
       </plugin>
     </plugins>
   </build>
