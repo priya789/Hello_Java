@@ -17,7 +17,7 @@
 
   <build>
     <finalName>demo</finalName>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main/resources/migrations/db</sourceDirectory>
     <plugins>
       <plugin>
 	     <!-- 
