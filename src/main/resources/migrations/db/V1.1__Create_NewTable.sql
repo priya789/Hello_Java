@@ -1,6 +1,6 @@
-CREATE DATABASE test;
+CREATE DATABASE newDB;
 
-USE test;
+USE newDB;
 
 CREATE TABLE  products (
          productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
