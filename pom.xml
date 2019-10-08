@@ -9,7 +9,7 @@
   <url>https://github.com/priya789/Hello_Java</url>
 
   <properties>
-<database.url>jdbc:mysql://devopsflywaypoc.cvwa0v1dnfoc.us-west-2.rds.amazonaws.com:3306</database.url>
+<database.url>jdbc:mysql://devopsflywaypoc.cvwa0v1dnfoc.us-west-2.rds.amazonaws.com:3306/newDB</database.url>
 <database.user>admin</database.user>
 <database.password>admin123</database.password>
 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
