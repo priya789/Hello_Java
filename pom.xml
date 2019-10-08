@@ -7,6 +7,14 @@
   <version>1.0-SNAPSHOT</version>
   <name>Demo Maven Webapp</name>
   <url>https://github.com/VinutnaNandyala/Hello_Java</url>
+
+  <properties>
+<database.url>jdbc:mysql://IP:3306/test2</database.url>
+<database.user>root</database.user>
+<database.password>password</database.password>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
   <build>
     <finalName>demo</finalName>
     <sourceDirectory>src</sourceDirectory>
@@ -17,7 +25,31 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-        </configuration>
+       </configuration>
+
+	
+       <groupId>org.flywaydb</groupId>
+	<artifactId>flyway-maven-plugin</artifactId>
+	<version>4.1.2</version>
+	<configuration>
+	<sqlMigrationSeparator>_</sqlMigrationSeparator>
+	<locations>
+	<location>filesystem:/src/main/resources/migrations/db</location>
+	</locations>
+	<url>${database.url}</url>
+	<user>${database.user}</user>
+	<password>${database.password}</password>
+	</configuration>
+	<dependencies>
+	<!-- Mysql -->
+	<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.38</version>
+	</dependency>
+	<!-- /Mysql -->
+	</dependencies>
+
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
