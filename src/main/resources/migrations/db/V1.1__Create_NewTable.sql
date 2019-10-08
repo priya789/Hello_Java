@@ -1,7 +1,3 @@
-CREATE DATABASE DataFly;
-
-USE DataFly;
-
 CREATE TABLE  products (
          productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
          productCode  CHAR(3)       NOT NULL DEFAULT '',
