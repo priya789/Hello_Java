@@ -1,6 +1,6 @@
-CREATE DATABASE newDB;
+CREATE DATABASE DataFly;
 
-USE newDB;
+USE DataFly;
 
 CREATE TABLE  products (
          productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
