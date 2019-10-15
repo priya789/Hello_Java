@@ -6,7 +6,7 @@ pipeline{
       }
       
       stage('build'){
-        mvn --build
+        sh mvn --build
         sh flyway baseline 
         sh flyway migrate
         sh flyway validate 
