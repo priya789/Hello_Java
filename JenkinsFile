@@ -10,9 +10,6 @@ pipeline{
       stage('build'){
       steps{
         sh 'mvn build'
-        }
-        steps
-        {
         sh 'flyway baseline' 
         sh 'flyway migrate'
         sh 'flyway validate' 
