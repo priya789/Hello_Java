@@ -9,10 +9,12 @@ pipeline{
       
       stage('build'){
       steps{
+      withMaven(){
         sh 'flyway:baseline' 
         sh 'flyway:migrate'
         sh 'flyway:validate' 
         sh 'flyway:info'
+        }
         }
       }
     }
