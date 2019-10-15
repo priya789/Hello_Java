@@ -1,0 +1,17 @@
+pipeline{
+  agent any 
+    stages {
+      stage('checkout'){
+        checkout scm
+      }
+      
+      stage('build'){
+        mvn --build
+        sh flyway clean 
+        sh flyway baseline 
+        sh flyway migrate
+        sh flyway validate 
+        sh flyway info
+      }
+    }
+}
