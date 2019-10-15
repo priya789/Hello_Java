@@ -1,1 +1,1 @@
-INSERT INTO products (productCode,name,quantity,price) VALUES ('A00','colgate',1,12.5)
+INSERT INTO items (productCode,name,quantity,price) VALUES ('A00','close up',1,12.5)
