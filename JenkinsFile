@@ -9,12 +9,7 @@ pipeline{
       
       stage('build'){
       steps{
-      sh 'mvn "flyway:clean" "flyway:baseline" "flyway:migrate" "flyway:validate" "flyway:info"'
-        //sh 'flyway:baseline' 
-        //sh 'flyway:migrate'
-       // sh 'flyway:validate' 
-       // sh 'flyway:info'
-        
+      sh 'mvn "flyway:migrate" "flyway:validate" "flyway:info"'  
         }
       }
     }
