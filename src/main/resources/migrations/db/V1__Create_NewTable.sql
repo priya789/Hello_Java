@@ -1,4 +1,4 @@
-CREATE TABLE  products (
+CREATE TABLE  items (
          productID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
          productCode  CHAR(3)       NOT NULL DEFAULT '',
          name         VARCHAR(30)   NOT NULL DEFAULT '',
