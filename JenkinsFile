@@ -9,14 +9,14 @@ pipeline{
       
       stage('build'){
       steps{
-        sh mvn build
+        sh 'mvn build'
         }
         steps
         {
-        sh flyway baseline 
-        sh flyway migrate
-        sh flyway validate 
-        sh flyway info
+        sh 'flyway baseline' 
+        sh 'flyway migrate'
+        sh 'flyway validate' 
+        sh 'flyway info'
         }
       }
     }
