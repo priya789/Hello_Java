@@ -2,16 +2,16 @@ pipeline{
   agent any 
     stages {
       stage('checkout'){
-      steps{
+      step{
         checkout scm
       }
       }
       
       stage('build'){
-      steps{
+      step{
         sh mvn build
         }
-        steps
+        step
         {
         sh flyway baseline 
         sh flyway migrate
