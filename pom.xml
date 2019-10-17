@@ -49,7 +49,6 @@
 	</dependency>
 	<!-- /Mysql -->
 	</dependencies>
-
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
