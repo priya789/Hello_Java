@@ -1,1 +1,1 @@
-DELETE FROM items WHERE productID = 6;
+DELETE * FROM items WHERE productID = 6;
