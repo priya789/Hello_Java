@@ -7,7 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>Demo Maven Webapp</name>
   <url>https://github.com/priya789/Hello_Java</url>
-
   <properties>
 <database.url>jdbc:mysql://devopsflywaypoc.cvwa0v1dnfoc.us-west-2.rds.amazonaws.com:3306/DataFly</database.url>
 <database.user>admin</database.user>
