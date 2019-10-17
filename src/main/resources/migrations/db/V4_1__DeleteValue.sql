@@ -1,1 +1,1 @@
-DELETE * FROM items WHERE name = "tide";
+DELETE * FROM items WHERE name = "Tide";
