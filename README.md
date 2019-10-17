@@ -1,2 +1,2 @@
 # Hello_Java
-this is simple java webapplication to display Hello
+this is MYSql database migration code
