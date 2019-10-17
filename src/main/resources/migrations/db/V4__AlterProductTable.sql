@@ -1,1 +1,0 @@
-ALTER TABLE items ADD COLUMN Availability VARCHAR(15);
