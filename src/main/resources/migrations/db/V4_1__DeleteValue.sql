@@ -1,1 +1,1 @@
-DELETE FROM DataFly.items WHERE productID = 6 ;
+DELETE FROM DataFly.items WHERE productID = 5;
