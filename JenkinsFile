@@ -3,7 +3,7 @@ pipeline{
     stages {
       stage('clone'){
       steps {
-                git branch: 'master', url: "https://github.com/priya789/Hello_Java.git"
+                checkout scm
             }
       }
       
