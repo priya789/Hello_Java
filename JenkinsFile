@@ -9,7 +9,7 @@ pipeline{
       
       stage('build'){
       steps{
-           sh 'mvn "flyway:migrate" "flyway:validate" "flyway:info"'  
+           sh 'mvn "flyway:repair" "flyway:migrate" "flyway:validate" "flyway:info"'  
         }
       }
       }
