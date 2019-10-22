@@ -1,1 +1,1 @@
-INSERT INTO items (productID,productCode,name,quantity,price,productType) VALUES (7,'700','pepsi',4,50.5,'EnergyDrink');
+INSERT INTO items (productID,productCode,name,quantity,price,productType) VALUES (7,'700','pepsi',4,55.5,'EnergyDrink');
